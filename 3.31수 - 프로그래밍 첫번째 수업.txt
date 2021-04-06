@@ -1,0 +1,23 @@
+front-end 개발(html5 - 웹사이트의 뼈대 생성 (i-phone 애플에서 (플래쉬,액티브x가 지배하던) 인터넷을 휴대폰에서 써야하기 때문에 개발한 형태                              
+                   css3 - 디자인용
+                   javascript - 클릭시 이벤트 발생, 동적제어!
+                                  (JQUERY 자바스크립트를 쉽게 만들어 놓은것.)
+                                  (Vue.js 협업을 위한 것, 3대장(앵귤러, 리액트, 뷰) 중 하나, 쉬움 
+
+
+back -end 개발(1세대 - php 아직 쓰는 곳도 있다.
+                    2세대 - asp(ms, .net.core)유료,우리나라는 돈주는걸 싫어해서 망하는 추세
+                    3세대 - jsp(spring faramework이게 대세 근데 너무 방대하고 어려움,
+                                  spring boot2) spring farame work를 쉽게 만들어놓은 것.>>>>>우리가 배울 것
+
+html5, css3, bootsrap, javascript, jquery, vue.js, java spring boot2, sql >> 9개의 언어
+
+FONT END개발. BACK END개발
+9개의 프로그래밍 언어.
+
+
++mobile
+
+F12번 누르면 개발자모드로 전환/
+
+OPEN FOLDER!로 시작
