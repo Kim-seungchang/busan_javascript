@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //배열의 함수
+        //기본적으로 배열은 객체이므로 배열을 효과적으로 활용하기 
+
+        //tostring() : 배열의 데이터를 문자열로 변환하여 출력
+        //join() : tostring()과 비슷한 기능을 하는 함수로 지정한 문자를 구분기호로 사용할 수 있음
+            //배열명.join(구분자로 사용할 문자열);
+         
+        var fruits = ["바나나", "파인애플", "자몽", "망고"];
+        console.log("배열 fruits : " + fruits[0] + fruits[1] + fruits[2] + fruits[3]);
+        // alert("배열 fruits : " + fruits);
+
+        for(var i = 0; i < fruits.length; i++) {
+            console.log("배열 fruits : " + fruits[i]);
+        }
+
+        console.log("\n------toString() 사용------\n");
+        cnosole.log("배열 fruits : " + fruits.toString());
+        console.log("\n ------ join() 사용 -----\n");
+        console.log("배열 fruits : " + fruits.join("$"));
+
+        // 배열에 데이터 추가 및 삭제
+        // push(), pop(), shift(), unshift()
+        // push(), pop() 배열의 가장 마지막에 데이터를 추가하거나 삭제할 때 사용
+        // shift(), unshift() 배열의 가장 앞에 데이터를 추가하거나 삭제할 때 사용
+
+        // push() : 배열의 가장 마지막에 데이터를 추가
+           // 배열명.push(추가할 데이터);
+        //pop() : 배열의 가장 마지막에 있는 데이터를 삭제
+           // 배열명.pop();
+
+           console.log("\n ---- push, pop ------ \n");
+           console.log("배열 fruits의 데이터 : " + fruits.tostring());
+           fruits.push("사과");
+           fruits.push("배");
+           console.log("배열 fruits의 push 후  데이티 : " + fruits.tostring());
+           fruits[6] = "수박";
+           fruits[7] = "참외";
+           console.log("배열 fruits에 indes로 데이터 추가후 데이터 : " + fruits.tostring());
+           fruits.pop();
+           fruits.pop();
+           fruits.pop();
+           fruits.pop();
+           console.log("배열 fruits의 pop 사용 후 데이터 : " + fruits.tostring());
+
+           console.log("\n ------- shift, unshift ----- \n");
+           // shift(): 배열의 첫번째 요소를 삭제하고 다른 모든 요소의 index 번호를 1 낮춤
+              // 배열명.shift();
+           // unshift() : 배열의 모든 요소의 index를 1올리고, index 0번에 데이터를 추가
+              //배열명. unshift(추가할 데이터);
+
+            console.log("배열 fruits의 원본 데이터 : " + fruits.tostring());
+            fruits.unshift("사과");
+            fruits.unshift("수박");
+            console.log("배열 fruits에 unshift 사용 후 데이터: " + fruits.tostring());
+
+            // delete() : 배열의 지정된 요소를 삭제하는 함수
+            //delte 함수는 사용하지 않는 것이 좋음, 다른 index의 요소를 옮겨오는 것이 아니라 근야 비워 두는 형태
+            //잘못된 연산이 진행될 가능성이 높음
+                // delete 배열명[index];
+
+           console.log("\n ------- delete -------- \n");
+           console.log("배열 fruits의 원본 데이터 : " + fruits.tostring());
+           delete fruits[2]
+           
+
+           //배열 연결하기
+        //    splice, concat, slice
+        // splice() : 배열의 지정된 위치에 데이터를 추가, 삭제하는 함수
+        // 세번째 매개변수가 없을 경우 (1번, 2번 매개변수만 사용할 경우) 데이터를 삭제하는데 사용할 수 있음
+            // 배열명.solice(추가할 index 위치, 삭제할 데이터 수, 추가할 데이터, ...)
+
+
+        var fruits = ["바나나", "파인애플", "오렌지", "자몽", "망고"];
+        console.log()
+
+        //slice() : 원본 배열의 일부를 잘라서 새로운 배열로 만들 경우 사용하는 함수
+        //원본 배열은 변경되지 않고 새로운 배열을 생성
+        //만약 매개변수를 1개만 사용시 시작 index부 터 배열의 끝까지 잘라냄
+           //var 사본 배열명 = 원본배열명.slice(잘라낼 시작 index, 잘라낼 요소 수)
+        var cars = ["모닝", "아반떼", "소나타","그렌저","오피러스","제네시스"];
+        console.log("배열 cars의 원본 데이터 : " + cars.tostring());
+        var bigcars = cars.slice(3);
+        console.log("배열 cars에 slice 후 데이터 : + " cars.tostring());
+        console.log("배열 cars에tj slice로 잘라낸 데이터 : + " bigcars.tostring());
+
+
+        // contact
+        // 기준이 되는
+            </script>
+</head>
+<body>
+    
+</body>
+</html>
